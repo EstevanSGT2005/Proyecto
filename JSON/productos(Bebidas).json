@@ -1,0 +1,123 @@
+[
+    
+    {
+     "id":"Brisa 280ML",
+     "titulo":"Brisa 280ML",
+     "imagen":"./IMG/Bebida/Agua/Brisa/Brisa280ML.jpg",
+     "imagenS":"",
+     "categoria":{
+         "nombre":"Agua",
+         "id":"agua"
+     },
+     "nuevo_precio":900,
+     "antiguo_precio":"2000"
+ 
+    }, 
+    {
+     "id":"Brisa Lima Limon 280ML",
+     "titulo":"Brisa Lima Limon 280ML",
+     "imagen":"./IMG/Bebida/Agua/Brisa/BrisaLimaLimon280ML.jpg",
+     "imagenS":"",
+     "categoria":{
+         "nombre":"Agua",
+         "id":"agua"
+     },
+     "nuevo_precio":1500,
+     "antiguo_precio":"1400"
+     
+ 
+    },
+    {
+     "id":"Brisa Manzana 280ML",
+     "titulo":"Brisa Manzana 280ML",
+     "imagen":"./IMG/Bebida/Agua/Brisa/BrisaManzana280ML.jpg",
+     "imagenS":"",
+     "categoria":{
+         "nombre":"Agua",
+         "id":"agua"
+     },
+     "nuevo_precio":1500,
+     "antiguo_precio":"2000"
+ 
+    },
+    {
+     "id":"Brisa 600ML",
+     "titulo":"Brisa 600ML",
+     "imagen":"./IMG/Bebida/Agua/Brisa/Brisa600ML.jpg",
+     "imagenS":"",
+     "categoria":{
+         "nombre":"Agua",
+         "id":"agua"
+     },
+     "nuevo_precio":1500,
+     "antiguo_precio":"2000"
+ 
+    },
+ 
+    {
+     "id":"Speed 250ML",
+     "titulo":"Speed 250ML",
+     "imagen":"./IMG/Bebida/Energizante/speed250ml.png",
+     "imagenS":"",
+     "categoria":{
+         "nombre":"Energizante",
+         "id":"energizante"
+     },
+     "nuevo_precio":1500,
+     "antiguo_precio":"2000"
+ 
+    },
+    {
+     "id":"Speed 1L",
+     "titulo":"Speed 1L",
+     "imagen":"./IMG/Bebida/Energizante/speed1l.png",
+     "imagenS":"",
+     "categoria":{
+         "nombre":"Energizante",
+         "id":"energizante"
+     },
+     "nuevo_precio":1500,
+     "antiguo_precio":"1400"
+ 
+    },
+    {
+     "id":"Monster Green 473ML",
+     "titulo":"Monster Green 473ML",
+     "imagen":"./IMG/Bebida/Energizante/MonsterGreen473ml.png",
+     "imagenS":"",
+     "categoria":{
+         "nombre":"Energizante",
+         "id":"energizante"
+     },
+     "nuevo_precio":1500,
+     "antiguo_precio":""
+ 
+    },
+
+    {
+        "id":"Monster Green 473ML",
+        "titulo":"Monster Green 473ML",
+        "imagen":"./IMG/Bebida/Energizante/MonsterGreen473ml.png",
+        "imagenS":"",
+        "categoria":{
+            "nombre":"Energizante",
+            "id":"energizante"
+        },
+        "nuevo_precio":1500,
+        "antiguo_precio":""
+    
+     },
+       {
+        "id":"Cielo 1L",
+        "titulo":"Cielo 1L",
+        "imagen":"./IMG/Bebida/Agua/Cielo/Cielo1Lts.jpg",
+        "categoria":{
+            "nombre":"Agua",
+            "id":"agua"
+        },
+        "nuevo_precio":1500,
+        "antiguo_precio":""
+    
+       }
+ 
+ ]

@@ -1,0 +1,689 @@
+body
+{
+    background: var(--fd-color-100);
+}
+
+.padd-15
+{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+/*Menu Principal*/
+
+nav
+{
+    width: 100%;
+    background: var(--fd-color-900);
+}
+
+nav .contenedor
+{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+nav img.logo 
+{
+    width: 170px;
+    margin: 0 35px;
+}
+
+nav .contenedor .busqueda 
+{
+    align-items: center;
+    display: flex;
+    width: 500px;
+    padding: 8px 1.6rem;
+    gap: 1rem;
+    background: var(--fd-color-50);
+    border: 5px solid var(--estilo-color);
+    border-radius: 20px;
+    left: 35%;
+    position: absolute;
+}
+
+nav .contenedor .busqueda i
+{
+    padding: 0 10px;
+    color: var(--texto);
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+nav .contenedor .busqueda input[type='search']
+{
+    border:none;
+    color: var(--texto);
+    background: var(--fd-color-50);
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+nav .contenedor .busqueda input[type='search']::placeholder
+{
+    color: var(--texto);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+nav .contenedor .perfil a
+{
+    display: flex;
+    align-items: center;
+    margin:0 70px;
+}
+
+nav .contenedor .perfil a img.foto
+{
+    border-radius: 50%;
+    width: 80px;
+}
+
+nav .contenedor .perfil a h2
+{
+    color: var(--texto);
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0 20px ;
+}
+
+nav .toggler
+{
+    margin-right: 100px;
+    display: flex;
+    border:3px solid var(--estilo-color);
+    background: var(--fd-color-900);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 8px;
+}
+
+nav .toggler i
+{
+    color: var(--estilo-color);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+nav .toggler
+{
+    display: none;
+}
+
+/*Menu Segundario*/
+
+main
+{
+    background: var(--fd-color-100);
+    display: grid;
+    grid-template-columns: 16rem auto 30rem;
+    gap: 2rem;
+    width: 96%;
+}
+
+main aside
+{
+    padding: 30px;
+    background: var(--fd-color-900);
+    border-right: 2px solid var(--fd-color-50);
+    border-bottom: 2px solid var(--fd-color-50);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
+main .aside .nav a
+{
+    font-size: 20px;
+    display: flex;
+    border-bottom: 2px solid var(--fd-color-50);
+    align-items: center;
+    gap: 1.2rem;
+    height: 4.2rem;
+    color: var(--texto);
+    position: relative;
+}
+
+main .aside .nav a i
+{
+    transition: all 300ms ease;
+}
+
+main .aside .nav a i.fa
+{
+    font-size: 22px;
+}
+
+main .aside .nav a i.fa-solid
+{
+    font-size: 25px;
+}
+
+main .aside .nav a i.icon,
+main .aside .nav a i.bx
+{
+    font-size: 30px;
+}
+
+main .aside .nav a.active
+{
+    color: var(--estilo-color);
+}
+
+main .aside .nav a:hover i
+{
+    margin-left: 2rem;
+}
+/**/
+
+section .titulo
+{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: var(--texto);
+}
+
+section .titulo input[type="date"]
+{
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+    border: 5px solid var(--estilo-color);
+    background: var(--fd-color-50);
+    color: var(--texto);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+section .estadisticas
+{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+section .estadisticas .tabla
+{
+    background: linear-gradient(#5719c2, var(--fd-color-900));
+    padding: 1.6rem;
+    border-radius: 20px;
+    color: white;
+    height: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 1rem 1rem #5719c2;
+    transition: all 300ms ease;
+    min-width: 22rem;
+}
+
+section .estadisticas .tabla:nth-child(2)
+{
+    background: linear-gradient(var(--error1), var(--fd-color-900));
+    box-shadow: 0 1rem 1rem var(--error1);
+}
+
+section .estadisticas .tabla:nth-child(3)
+{
+    background: linear-gradient(var(--estilo-color), var(--fd-color-900));
+    box-shadow: 0 1rem 1rem var(--estilo-color);
+}
+
+section .estadisticas .tabla:hover
+{
+    box-shadow: none;
+}
+
+section .estadisticas .tabla .valor h1
+{
+    color: var(--texto);
+}
+
+
+section .estadisticas .tabla .row
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+section .estadisticas .tabla .derecha
+{
+    display: flex;
+    gap: 0.5rem;
+}
+
+section .estadisticas .tabla .derecha h2
+{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+section .estadisticas .tabla i
+{
+    padding: 15px;
+    border: 5px solid white;
+    color: white;
+    border-radius: 25px;
+}
+
+section .estadisticas .tabla i.fa
+{
+    font-size: 22px;
+}
+
+section .estadisticas .tabla i.fa-solid
+{
+    font-size: 25px;
+}
+
+section .estadisticas .tabla i.icon,
+section .estadisticas .tabla i.bx
+{
+    font-size: 30px;
+}
+
+section .estadisticas .tabla .valor
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 30px 6px;
+}
+
+/*Repote*/
+
+section .reportes
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+section .reportes .reporte h3
+{
+    color: var(--texto);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+section .reportes .reporte details
+{
+    color: var(--estilo-color);
+    cursor: pointer;
+}
+
+
+section .reportes .reporte details h1,
+section .reportes .reporte details h4,
+section .reportes .reporte p
+{
+    font-size: 18px;
+    color: var(--texto);
+    cursor: text;
+}
+
+section .reportes .reporte details a
+{
+    font-size: 16px;
+    color: var(--texto);
+    transition: all .3s ease;
+}
+
+
+section .reportes .reporte details a:hover
+{
+    color: var(--estilo-color);
+}
+
+/*Inventario*/
+
+main .inventario
+{
+    margin-top: 2rem;
+    display: flex;
+    align-self: center;
+    gap: 2rem;
+}
+
+main .inventario .categorias
+{
+    display: flex;
+    gap: 1rem;
+    align-self: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+main .inventario .catalogo
+{
+    color: var(--texto);
+    transition: all .3s ease;
+}
+
+main .inventario .catalogo:hover
+{
+    background: var(--estilo-color);
+    color: white;
+}
+
+main .inventario .catalogo span
+{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+}
+
+main .inventario .catalogo:hover span
+{
+    background: white;
+}
+
+main .inventario .catalogo
+{
+    padding: 0.6rem 1.6rem;
+    background: var(--fd-color-50);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 300ms ease;
+}
+
+main .inventario .catalogo:hover
+{
+    box-sizing: 0 0 1.5rem var(--estilo-color);
+    cursor: pointer;
+}
+
+main .inventario .catalogo:first-child span
+{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    height: fit-content;
+    font-style: 1.5rem;
+}
+
+main .inventario .catalogo div
+{
+    display: flex;
+    gap: 2rem;
+    align-self: center;
+}
+
+/*Grafica*/
+
+canvas#chart
+{
+    background-color: var(--fd-color-900);
+    max-width: 100%;
+    margin-top: 2rem;
+    border-radius: 1.6rem;
+    padding: 1.6rem;
+}
+
+/*Nuestros Aliados */
+
+main section.izquierda .marcas
+{
+    background: var(--fd-color-900);
+    border-radius: 1.6rem;
+    margin: 20px -45px;
+    width: 550px;
+}
+
+main section.izquierda .marcas img
+{
+    width: 80px;
+}
+
+main section.izquierda .marcas .titulo
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem;
+    padding-bottom: 0;
+    margin: 20px;
+}
+
+main section.izquierda .marcas .titulo a
+{
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    color: var(--texto);
+    transition: all .3s ease;
+}
+
+main section.izquierda .marcas .titulo a:hover
+{
+    color: var(--estilo-color);
+}
+
+main section.izquierda .marcas .marca
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6rem;
+    color: var(--texto);
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 1px solid var(--fd-color-50);
+    transition: all .4s ease;
+}
+
+main section.izquierda .marcas .marca:last-child
+{
+    border: none;
+}
+
+main section.izquierda .marcas .marca:hover
+{
+    background: var(--fd-color-100);
+    cursor: pointer;
+}
+
+/*Subcatagolo*/
+
+main .subcatalogos
+{
+    margin:20px -45px;
+}
+
+main .subcatalogos i.fa
+{
+    font-size: 22px;
+}
+
+main .subcatalogos i.fa-solid
+{
+    font-size: 25px;
+}
+
+main .subcatalogos i.icon,
+main .subcatalogos i.bx
+{
+    font-size: 30px;
+}
+
+main .subcatalogos .titulo
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    margin: 20px;
+}
+
+main .subcatalogos .titulo a
+{
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    color: var(--texto);
+    transition: all .3s ease;
+}
+
+main .subcatalogos .titulo a:hover
+{
+    color: var(--estilo-color);
+}
+
+main .subcatalogos .subcatalogo
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 1.6rem;
+    border-radius: 1.6rem;
+    transition:all .3s ease;
+}
+
+main .subcatalogos .subcatalogo:hover
+{
+    background: var(--fd-color-50);
+}
+
+main .subcatalogos .subcatalogo .item
+{
+    display: flex;
+    gap: 1rem;
+}
+
+main .subcatalogos .subcatalogo .item .icon
+{
+    padding: 1rem;
+    border-radius: 1rem;
+    color: white;
+    background: var(--estilo-color);
+    display: flex;
+    align-items: center;
+}
+
+main .subcatalogos .subcatalogo .detalles
+{
+    display: flex;
+    align-items: center;
+    color: var(--texto);
+    gap: 1rem;
+    font-size: 17px;
+}
+
+main .subcatalogos .subcatalogo .cantidad
+{
+    color: var(--texto);
+    align-items: center;
+    justify-content: center;
+    padding:0 20px;
+    font-size: 16px;
+}
+
+main .subcatalogos .subcatalogo .cantidad .unidad
+{
+    padding:0 75px;
+    width: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+main .subcatalogos .subcatalogo a
+{
+    font-size: 18px;
+    color: var(--texto);
+    transition: all .3s ease;
+}
+
+main .subcatalogos .subcatalogo a:hover
+{
+    color: var(--estilo-color);
+}
+
+/*responsive*/
+
+@media screen and (max-width:1024px)
+{
+    
+  
+    
+    nav .toggler
+    {
+        display: inline;
+        width: 3rem;
+        height: 50px;
+        right: -6rem;
+        position: absolute;
+    }
+
+
+
+    nav .contenedor .perfil a img.foto
+    {
+        width: 50px;
+    }
+
+    nav .contenedor .perfil a h2
+    {
+        font-size: 15px;
+    }
+
+    main
+    {
+        grid-template-columns: 1fr;
+    }
+
+    nav .contenedor .busqueda 
+    {
+        width: 280px;
+
+    }
+
+    main aside
+    {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 3;
+        width: 22rem;
+        height: 10vh;
+        display: none;
+        animation: showSidebar 500ms ease forwards;
+    }
+
+    @keyframes showSidebar 
+    {
+       to
+       {
+        left: 0;
+       } 
+    }
+    
+    main canvas
+    {
+        margin: 3rem 0 1rem;
+    }
+
+}

@@ -1,0 +1,553 @@
+.section
+{
+    background: var(--fd-color-100);
+    min-height: 100vh;
+    position: fixed;
+    display: block;
+    padding: 0 30px;
+    opacity: 1;
+    left: 270px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.section.back-section
+{
+    z-index: 1;
+}
+
+.section.active
+{
+    z-index: 2;
+    opacity: 1;
+    animation: Section 2s ease;
+}
+
+@keyframes Section
+{
+    0%
+    {
+        transform: translateX(100%);
+    }
+    100%
+    {
+        transform: translateX(0%);
+    }
+}
+
+.contenedor
+{
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+}
+
+.section .contenedor
+{
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+/*aside*/
+
+.aside
+{
+    width: 270px;
+    background: var(--fd-color-900);
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 30px;
+    height: 100%;
+    border-right: 2px solid var(--fd-color-50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.aside .logo
+{
+    position: absolute;
+    top: 30px;
+}
+
+.aside .logo img
+{
+    height: 150px;
+    width: 150px;
+}
+
+.aside .nav-toggler
+{
+    height: 40px;
+    width: 45px;
+    border: 4px solid var(--estilo-color);
+    cursor: pointer;
+    position: fixed;
+    left: 300px;
+    top: 20px;
+    border-radius: 5px;
+    background: var(--fd-color-900);
+    display: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.aside .nav-toggler span
+{
+    height: 3px;
+    width: 18px;
+    background: var(--estilo-color);
+    display: inline-block;
+    position: relative;
+
+}
+
+
+.aside .nav-toggler.open span
+{
+    background-color: transparent;
+}
+
+.aside .nav-toggler span::before
+{
+    content: '';
+    height: 3px;
+    width: 18px;
+    background: var(--estilo-color);
+    position: absolute;
+    top: -6px;
+    left: 0;
+}
+
+.aside .nav-toggler.open span::before
+{
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.aside .nav-toggler span::after
+{
+    content: '';
+    height: 3px;
+    width: 18px;
+    background: var(--estilo-color);
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+
+.aside .nav-toggler.open span::after
+{
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.aside .nav
+{
+    margin-top: 50px;
+}
+
+.aside .nav li
+{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.aside .nav li a
+{
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    border-bottom: 2px solid var(--fd-color-50);
+    color: var(--texto);
+    padding: 5px 15px;
+}
+
+.aside .nav li a.active
+{
+    color: var(--estilo-color);
+}
+
+.aside .nav li a i, 
+.aside .nav li a .ion-icon
+{
+    margin-right: 15px;
+}
+
+/*Registro*/
+
+.section .contenedor
+{
+    width: 410px;
+    height: 650px;
+    background: var(--fd-color-900);
+    position: absolute;
+    top: 50% ;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 10px;
+}
+
+.section .contenedor .formulario
+{
+    width: 100%;
+    overflow: hidden;
+}
+
+.contenedor img
+{
+    width: 150px;
+    height: 150px;
+    background: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: -70px;
+    left: 130px;
+}
+
+.formulario form
+{
+    display: flex;
+    width: 500%;
+}
+
+.formulario form .pagina
+{
+    width: 25%;
+    transition: margin-left .5s ease-in-out;
+}
+
+.formulario form .pagina .campo
+{
+    height: 35px;
+    width: 350px;
+    margin: 40px 0;
+    display: flex;
+    position: relative;
+}
+
+h3.my-profession
+{
+    text-align: center;
+    position: relative;
+    font-size: 25px;
+    margin: 15px 0;
+    margin-bottom: 20px;
+}
+
+.typing
+{
+    color: var(--estilo-color);
+}
+
+.contenedor .progreso-principal
+{
+    display: flex;
+    margin: 40px 0;
+}
+
+.contenedor .progreso-principal .paso
+{
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.progreso-principal .paso p
+{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--texto);
+    margin-bottom: 8px;
+    transition: .2s;
+}
+
+.progreso-principal .paso p.active
+{
+    color: var(--estilo-color);
+}
+
+.progreso-principal .paso .num
+{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border: 3px solid var(--texto);
+    border-radius: 50%;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    transition: .2s;
+}
+
+.progreso-principal .paso .num.active
+{
+    border-color: var(--estilo-color);
+    background: var(--estilo-color);
+}
+
+.progreso-principal .paso .num span
+{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--texto);
+}
+
+.progreso-principal .paso .num.active span
+{
+    display: none;
+}
+
+.progreso-principal .paso .check
+{
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    font-size: 18px;
+    transform: translate(-50%,-50%);
+}
+
+.progreso-principal .paso .check.active
+{
+    display: block;
+   color: var(--fd-color-900);
+}
+
+.progreso-principal .paso .num::before,
+.progreso-principal .paso .num::after
+{
+    position: absolute;
+    content: '';
+    width: 43px;
+    height: 4px;
+    bottom: 11px;
+    right: -43px;
+    background: var(--texto);
+}
+
+.progreso-principal .paso:last-child .num::before,
+.progreso-principal .paso:last-child .num::after
+{
+    display: none;
+}
+
+.progreso-principal .paso .num.active::after
+{
+    background: var(--estilo-color);
+    animation: mov_linea .5s linear forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+@keyframes mov_linea
+{
+    100%
+    {
+        transform: scaleX(1);
+    }
+}
+
+.formulario form .pagina .campo .label
+{
+    position: absolute;
+    color: var(--estilo-color);
+    top: -30px;
+    font-weight: 700;
+    font-size: 20px;
+    float: left;
+    text-align: left;
+    width: 100%;
+}
+
+.formulario form .pagina .campo input
+{
+    width: 100%;
+    color: var(--texto);
+    font-style: 'Roboto Slab';
+    height: 100%;
+    border: none;
+    border-bottom: 5px solid var(--estilo-color);
+    background: transparent;
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 5px;
+}
+
+.formulario form .pagina .campo input[type="date"]::-webkit-calendar-picker-indicator
+{
+    background-color: var(--estilo-color);
+}
+
+.formulario form .pagina .campo select
+{
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: var(--texto);
+    border-bottom: 5px solid var(--estilo-color);
+    background: var(--fd-color-900);
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 5px;
+    margin: 4px 0;
+}
+
+.ojitos
+{
+    position: absolute;
+    top: 5px;
+    right: 7px;
+    font-size: 20px;
+    color: var(--estilo-color);
+}
+
+#ocultar
+{
+    display: none;
+}
+
+#ocultar, #mostrar
+{
+    cursor: pointer;
+}
+
+.formulario form .pagina .campo button,
+.formulario form .pagina .campo input[type='submit']
+{
+    width: 100%;
+    height: calc(100% + 5px);
+    margin-top: -20px;
+    border: none;
+    border-radius: 7px;
+    background: var(--texto);
+    color: var(--fd-color-900);
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition:all 0.3s ease;
+}
+
+.formulario form .pagina .campo button:hover,
+.formulario form .pagina .campo input[type='submit']:hover
+{
+    background: var(--estilo-color);
+}
+
+.formulario form .pagina .bnt button,
+.formulario form .pagina .campo input[type='submit']
+{
+    margin-top: -20px !important; 
+}
+
+form .pagina .bnt button.volver
+{
+    margin-right: 3px;
+    font-style: 17px;
+}
+
+form .pagina .bnt button.adelantar
+{
+    margin-left: 2px;
+    font-style: 17px;
+}
+
+@media (max-width:1199px)
+{
+    .section .contenedor
+    {
+        padding-top: 70px;
+    }
+
+    .aside
+    {
+        left: -290px;
+    }
+
+    .aside.open
+    {
+        left: 0;
+    }
+
+    .aside .nav-toggler
+    {
+        display: flex;
+        left: 30px;
+    }
+
+    .aside .nav-toggler.open
+    {
+        left: 300px;
+    }
+
+    .section
+    {
+        left: 0;
+    }
+
+    .section.open 
+    {
+        left: 270px;
+    }
+}
+
+@media (max-width:991px)
+{
+    .progreso-principal .paso p
+    {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width:600px)
+{
+    .section .contenedor
+    {
+        width: 310px;
+    }
+
+    .contenedor img
+    {
+        left: 80px;
+    }
+
+    .formulario form .pagina .campo
+    {
+        width: 250px;
+    }
+
+    .progreso-principal .paso .num::before,
+    .progreso-principal .paso .num::after
+    {
+        width: 25px;
+        right: -25px;
+    }
+
+    .progreso-principal .paso p
+    {
+        font-size: 15px;
+    }
+
+    .formulario form .pagina .campo .label
+    {
+        font-size: 18px;
+    }
+}

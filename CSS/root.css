@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto+Slab:wght@500;700;900&display=swap');
+
+:root
+{
+    --fd-color-900: white;
+    --fd-color-100: #F5F5F5 ;
+    --fd-color-50: #e8dfec;
+    --texto: #000;
+    --transition: cubic-bezier(0, 0, 0.05, 1);
+}
+
+body.oscuro
+{
+    --fd-color-900: #000;
+    --fd-color-100: #121212;
+    --fd-color-50: #393939;
+    --texto: #fff;
+}
+
+body
+{
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+::before,::after
+{
+    box-sizing: border-box;
+}

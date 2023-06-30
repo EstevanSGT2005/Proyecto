@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar_Sesion</title>
+     <!--=================== CSS (ESTILOS) ================================-->
+     <link rel="stylesheet" href="./CSS/Login.css">
+     <link rel="stylesheet" href="./CSS/Css/color-1.css">
+     <link rel="stylesheet" href="./CSS/root.css">
+     <link rel="stylesheet" href="./CSS/selector-estilo.css">
+     <!--=================== CSS (CAMBIAR DE COLOR) =======================-->
+     <link rel="stylesheet" href="./CSS/Css/color-1.css" class="alternativa-estilo" title="color-1" disabled>
+     <link rel="stylesheet" href="./CSS/Css/color-2.css" class="alternativa-estilo" title="color-2" disabled>
+     <link rel="stylesheet" href="./CSS/Css/color-3.css" class="alternativa-estilo" title="color-3" disabled>
+     <link rel="stylesheet" href="./CSS/Css/color-4.css" class="alternativa-estilo" title="color-4" disabled>
+     <link rel="stylesheet" href="./CSS/Css/color-5.css" class="alternativa-estilo" title="color-5" disabled>
+     <link rel="stylesheet" href="./CSS/Css/color-6.css" class="alternativa-estilo" title="color-6" disabled>
+     <link rel="stylesheet" href="./CSS/Css/color-7.css" class="alternativa-estilo" title="color-7" disabled>
+     <link rel="stylesheet" href="./CSS/Css/color-8.css" class="alternativa-estilo" title="color-8" disabled>
+     <link rel="stylesheet" href="./CSS/Css/color-9.css" class="alternativa-estilo" title="color-9" disabled>
+     <link rel="stylesheet" href="./CSS/Css/color-10.css" class="alternativa-estilo" title="color-10" disabled>
+     <!--=================== ICONOS ======================================-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+</head>
+<body>
+  
+<!--=====================Toggler========================================-->    
+    <div class="menu-contenedor">
+        <div class="aside">
+            <div class="logo">
+                <a href=""><img src="./IMG/Logo.png"></a>
+            </div>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <li><a href="./menuprincipal.html"><i class="fa fa-home"></i>Inicio</a></li>
+                <li><a href="#login" class="active"><i class="fa fa-user"></i>Iniciar Sesión</a></li>
+                <li><a href="./Registro.html"><i class="fa fa-user-group"></i>Registrar</a></li>
+            </ul>
+        </div>
+    </div>
+    
+<!--======================Iniciar Sesión================================-->
+        
+    <div class="menu-contenido">
+
+        <section class="section" id="login">
+
+            <div class="contenedores">
+                <img src="./IMG/Logo.png">
+                <div class="padd-15">
+                    <h3 class="my-profession"><span class="typing">Iniciar Sesión</span></h3>
+                </div>
+                <div class="formulario">
+                    <form method="POST" action="./Login.php" id="loginForm" onsubmit="return validateForm()">
+                        <div class="pagina">
+                        <div class="campo">
+                            <label class="label"> Usuario </label>
+                            <input type="text" name="usuario" id="usuario">
+                        </div>
+                        <div class="campo">
+                            <label class="label">Contraseña</label>
+                            <input type="password" id="password" name="password">
+
+                            <span class="ojitos"onclick="mostrarContra()"> 
+                      
+                                <i id="mostrar" class="fa fa-eye" title="Mostrar Contraseña"></i>
+                                <i id="ocultar" class="fa fa-eye-slash" title="Ocultar Contraseña"></i>
+                            </span> 
+                        </div>
+                        <div class="campo">
+                            <a href="">¿Olvidaste tu contraseña o el nombre de usuario?</a>
+                        </div>
+                        <div class="campo btn">
+                            <input class="ingresar" type="submit" value="Iniciar Sesión">
+                        </div>
+                      </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+
+
+<!--======================Estilos========================================-->
+<div class="selector-estilo">
+    
+    <div class="selector-estilo-toggler s-icon">
+        <i class="fas fa-cog fa-spin"></i>
+    </div>
+
+    <div class="claro-oscuro s-icon">
+        <i class="fas"></i>
+    </div>
+    <h4>Temas de Colores</h4>
+
+    <div class="colores">
+        <span class="color-1" onclick="setActivaEstilo('color-1')"></span>
+        <span class="color-2" onclick="setActivaEstilo('color-2')"></span>
+        <span class="color-3" onclick="setActivaEstilo('color-3')"></span>
+        <span class="color-4" onclick="setActivaEstilo('color-4')"></span>
+        <span class="color-5" onclick="setActivaEstilo('color-5')"></span>
+        <span class="color-6" onclick="setActivaEstilo('color-6')"></span>
+        <span class="color-7" onclick="setActivaEstilo('color-7')"></span>
+        <span class="color-8" onclick="setActivaEstilo('color-8')"></span>
+        <span class="color-9" onclick="setActivaEstilo('color-9')"></span>
+        <span class="color-10" onclick="setActivaEstilo('color-10')"></span>
+    </div>
+
+</div>
+<!--===================== JS ==============================================-->
+    <script src="./JS/Selectro-Estilo.js"></script>
+    <script src="./JS/Login_Registro.js"></script>
+    <script src="./JS/Login.js"></script>
+    
+<!--==================== JS (Adicional) ===================================-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!--===================== JS (ICONOS) =====================================-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+</body>
+</html>

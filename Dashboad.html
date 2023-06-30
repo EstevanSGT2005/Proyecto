@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categoria</title>
+     <!--=================== CSS (ESTILOS) ================================-->
+     <link rel="stylesheet" href="./CSS/Dashoboad.css">
+     <link rel="stylesheet" href="./CSS/Css/color-1.css">
+     <link rel="stylesheet" href="./CSS/root.css">
+     <link rel="stylesheet" href="./CSS/selector-estilo.css">
+     <!--=================== CSS (CAMBIAR DE COLOR) =======================-->
+     <link rel="stylesheet" href="./CSS/Css/color-1.css" class="alternativa-estilo" title="color-1" disabled>
+     <link rel="stylesheet" href="./CSS/Css/color-2.css" class="alternativa-estilo" title="color-2" disabled>
+     <link rel="stylesheet" href="./CSS/Css/color-3.css" class="alternativa-estilo" title="color-3" disabled>
+     <link rel="stylesheet" href="./CSS/Css/color-4.css" class="alternativa-estilo" title="color-4" disabled>
+     <link rel="stylesheet" href="./CSS/Css/color-5.css" class="alternativa-estilo" title="color-5" disabled>
+     <link rel="stylesheet" href="./CSS/Css/color-6.css" class="alternativa-estilo" title="color-6" disabled>
+     <link rel="stylesheet" href="./CSS/Css/color-7.css" class="alternativa-estilo" title="color-7" disabled>
+     <link rel="stylesheet" href="./CSS/Css/color-8.css" class="alternativa-estilo" title="color-8" disabled>
+     <link rel="stylesheet" href="./CSS/Css/color-9.css" class="alternativa-estilo" title="color-9" disabled>
+     <link rel="stylesheet" href="./CSS/Css/color-10.css" class="alternativa-estilo" title="color-10" disabled>
+     <!--=================== ICONOS ======================================-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+<!--=====================Toggler========================================-->    
+<nav>
+    <div class="contenedor">
+        <img src="./IMG/Logo.png" class="logo">
+        <div class="busqueda">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search"  placeholder="Busqueda" maxlength="30">
+        </div>
+        <div class="perfil">
+            <a href=""><img src="./IMG/profile-1.jpg" class="foto"> <h2>Estevan Gomez</h2></a>
+        </div>
+        <button class="toggler">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+</nav>
+
+<main>
+    <aside>
+    <div class="menu-contenedor">
+        <div class="aside">
+
+            <ul class="nav">
+                <li><a href="#dashoboad" class="active"><i class="icon ion-ios-keypad"></i>Dashoboad</a></li>
+                <li><a href=""class="back-section"><i class="icon ion-md-person"></i>Perfil</a></li>
+                <li><a href="#Estadisticas"><i class="fa-solid fa-chart-simple"></i>Estadisticas</a></li>
+                <li><a href="./Crud(Usuario).php"><i class="fa-solid fa-user-pen"></i>Usuarios</a></li>
+                <li><a href="./Crud(Producto).php"><i class="fa-solid fa-boxes-stacked"></i>Productos</a></li>
+                <li><a href="#Reportes"><i class="fa-solid fa-paste"></i>Reportes</a></li>
+                <li><a href="Login.html"><i class="fa-solid fa-right-to-bracket fa-rotate-180"></i>Cerrar Sesión</a></li>
+            </ul>
+        </div>
+    </div> 
+</aside>   
+
+
+
+<section class="padd-15">
+    <div class="titulo padd-15">
+        <h1>Fecha</h1>
+        <input type="date">
+    </div>
+    <div class="estadisticas">
+
+        <div class="tabla">
+            <div class="row">
+                <div class="derecha">
+                    <img src="">
+                    <h2>Ganancias</h2>
+                </div>
+                <div class="izquierda">
+                    <i class="fa-solid fa-sack-dollar"></i>
+                </div>
+            </div>
+            <div class="valor">
+
+                <h1>$827,199</h1>
+
+                <div class="chip">
+                    <img src="" >
+                </div>
+
+            </div>
+
+        </div>
+
+        <!---->
+
+        <div class="tabla">
+            <div class="row">
+                <div class="derecha">
+                    <img src="">
+                    <h2>Inversión</h2>
+                </div>
+                <div class="izquierda">
+                    <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                </div>
+            </div>
+            <div class="valor">
+
+                <h1>$827,199</h1>
+
+                <div class="chip">
+                    <img src="" >
+                </div>
+
+            </div>
+
+        </div>
+
+        <!---->
+
+        <div class="tabla">
+            <div class="row">
+                <div class="derecha">
+                    <img src="">
+                    <h2>Usuarios Registrado</h2>
+                </div>
+                <div class="izquierda">
+                    <i class="fa fa-user-group"></i>
+                </div>
+                
+            </div>
+            <div class="valor">
+
+                <h1>15005</h1>
+
+                <div class="chip">
+                    <img src="" >
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--Reporte-->
+
+    <div class="reportes">
+        
+        <div class="reporte">
+
+            <h3>Ingresos</h3>
+            <div class="">
+                <details>
+                    <h1>Hola</h1>
+                    <h4>20</h4>
+                    <a href="" class="informacion">Saber la estadisticas</a>
+                </details>
+                <p class="informacion">Hol</p>
+                
+            </div>
+
+        </div>
+
+        <div class="reporte">
+
+            <h3>Gastos</h3>
+            <div class="">
+                <details>
+                    <h1>Hola</h1>
+                    <h4>20</h4>
+                    <a href="" class="informacion">Saber la estadisticas</a>
+                </details>
+                <p class="informacion">Hol</p>
+                
+            </div>
+
+        </div>
+
+        <div class="reporte">
+
+            <h3>Usuarios</h3>
+            <div class="">
+                <details>
+                    <h1>Hola</h1>
+                    <h4>20</h4>
+                    <a href="" class="informacion">Saber la estadisticas</a>
+                </details>
+                <p class="informacion">Hol</p>
+                
+            </div>
+
+        </div>
+
+        <div class="reporte">
+
+            <h3>Empleados</h3>
+            <div class="">
+                <details>
+                    <h1>Hola</h1>
+                    <h4>20</h4>
+                    <a href="" class="informacion">Saber la estadisticas</a>
+                </details>
+                <p class="informacion">Hol</p>
+                
+            </div>
+
+        </div>
+
+        <div class="reporte">
+
+            <h3>Invetarios</h3>
+            <div class="">
+                <details>
+                    <h1>Hola</h1>
+                    <h4>20</h4>
+                    <a href="" class="informacion">Saber la estadisticas</a>
+                </details>
+                <p class="informacion">Hol</p>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="inventario">
+        <h2>Inventario</h2>
+
+        <div class="categorias">
+            <div class="catalogo">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+
+            <div class="catalogo">
+                <span></span>
+                <div class="">
+                    <h5>Bebidas</h5>
+                    <h6></h6>
+                </div>
+            </div>
+
+            <div class="catalogo">
+                <span></span>
+                <div class="">
+                    <h5>Cereales</h5>
+                    <h6></h6>
+                </div>
+            </div>
+
+            <div class="catalogo">
+                <span></span>
+                <div class="">
+                    <h5>Confites y Dulces</h5>
+                    <h6></h6>
+                </div>
+            </div>
+
+            <div class="catalogo">
+                <span></span>
+                <div class="">
+                    <h5>Electrodomesticos</h5>
+                    <h6></h6>
+                </div>
+            </div>
+
+            <div class="catalogo">
+                <span></span>
+                <div class="">
+                    <h5>Licores</h5>
+                    <h6></h6>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <!---->
+
+    <canvas id="chart"></canvas>
+
+</section>
+
+<section class="izquierda">
+    <div class="marcas">
+        <div class="titulo">
+            <h2>Nuestros Aliados</h2>
+            <a href="">Mas</a>
+        </div>
+
+        <div class="marca">
+            <img src="./IMG/Marcas/monster.png">
+            <h4>Monster</h4>
+            <div class="invertir">
+                <p>Fecha</p>
+                <small>10/10/2021</small>
+            </div>
+            <div class="invertir">
+                <p>Productos</p>
+                <small>10</small>
+            </div>
+            <div class="invertir">
+                <p>Invertir</p>
+                <small>$200.000</small>
+            </div>
+        </div>
+
+        <div class="marca">
+            <img src="./IMG/Marcas/Big-Cola.png">
+            <h4>Big Cola</h4>
+            <div class="invertir">
+                <p>Fecha</p>
+                <small>10/10/2021</small>
+            </div>
+            <div class="invertir">
+                <p>Productos</p>
+                <small>10</small>
+            </div>
+            <div class="invertir">
+                <p>Invertir</p>
+                <small>$200.000</small>
+        </div>
+        </div>
+
+        <div class="marca">
+            <img src="./IMG/Marcas/Postobon.png">
+            <h4>Postobon</h4>
+            <div class="invertir">
+                <p>Fecha</p>
+                <small>10/10/2021</small>
+            </div>
+            <div class="invertir">
+                <p>Productos</p>
+                <small>10</small>
+            </div>
+            <div class="invertir">
+                <p>Invertir</p>
+                <small>$200.000</small>
+        </div>
+        </div>
+
+        <div class="marca">
+            <img src="./IMG/Marcas/HP.png">
+            <h4>HP</h4>
+            <div class="invertir">
+                <p>Fecha</p>
+                <small>10/10/2021</small>
+            </div>
+            <div class="invertir">
+                <p>Productos</p>
+                <small>10</small>
+            </div>
+            <div class="invertir">
+                <p>Invertir</p>
+                <small>$200.000</small>
+        </div>
+        </div>
+
+
+    </div>
+
+    <div class="subcatalogos">
+        <div class="titulo">
+            <h2>Subcatalogo</h2>
+            <a href="">Mas</a>
+        </div>
+
+        <div class="subcatalogo">
+            <div class="item">
+                <div class="icon">
+                    <i class="fa-solid fa-bowl-rice"></i>
+                </div>
+    
+                <div class="detalles">
+                    <h3>Computadores</h3>
+                </div>
+    
+            </div>
+            <div class="cantidad">
+                <h3>Cantidad Disponible</h3>
+                <h4 class="unidad">45</h4>
+            </div>
+
+            <a href="">detalle</a>
+        </div>
+
+        <div class="subcatalogo">
+            <div class="item">
+                <div class="icon">
+                    <i class="fa-solid fa-bowl-rice"></i>
+                </div>
+    
+                <div class="detalles">
+                    <h3>Computadores</h3>
+                </div>
+    
+            </div>
+            <div class="cantidad">
+                <h3>Cantidad Disponible</h3>
+                <h4 class="unidad">45</h4>
+            </div>
+
+            <a href="">detalle</a>
+        </div>
+
+        <div class="subcatalogo">
+            <div class="item">
+                <div class="icon">
+                    <i class="fa-solid fa-bowl-rice"></i>
+                </div>
+    
+                <div class="detalles">
+                    <h3>Computadores</h3>
+                </div>
+    
+            </div>
+            <div class="cantidad">
+                <h3>Cantidad Disponible</h3>
+                <h4 class="unidad">45</h4>
+            </div>
+
+            <a href="">detalle</a>
+        </div>
+
+        <div class="subcatalogo">
+            <div class="item">
+                <div class="icon">
+                    <i class="fa-solid fa-bowl-rice"></i>
+                </div>
+    
+                <div class="detalles">
+                    <h3>Cereales</h3>
+                </div>
+    
+            </div>
+            <div class="cantidad">
+                <h3>Cantidad Disponible</h3>
+                <h4 class="unidad">45</h4>
+            </div>
+
+            <a href="">detalle</a>
+        </div>
+
+        <div class="subcatalogo">
+            <div class="item">
+                <div class="icon">
+                    <i class="fa-solid fa-beer-mug-empty"></i>
+                </div>
+    
+                <div class="detalles">
+                    <h3>Cerveza</h3>
+                </div>
+    
+            </div>
+            <div class="cantidad">
+                <h3>Cantidad Disponible</h3>
+                <h4 class="unidad">45</h4>
+            </div>
+
+            <a href="">detalle</a>
+        </div>
+
+        <div class="subcatalogo">
+            <div class="item">
+                <div class="icon">
+                    <i class="fa-solid fa-computer"></i>
+                </div>
+    
+                <div class="detalles">
+                    <h3>Computadores</h3>
+                </div>
+    
+            </div>
+            <div class="cantidad">
+                <h3>Cantidad Disponible</h3>
+                <h4 class="unidad">45</h4>
+            </div>
+
+            <a href="">detalle</a>
+        </div>
+    </div>
+</section>
+</main>
+
+
+
+<!--======================Estilos========================================-->
+
+<div class="selector-estilo">
+
+<div class="selector-estilo-toggler s-icon">
+    <i class="fas fa-cog fa-spin"></i>
+</div>
+    
+<div class="claro-oscuro s-icon">
+    <i class="fas"></i>
+</div>
+    
+<h4>Temas de Colores</h4>
+    
+<div class="colores">
+    <span class="color-1" onclick="setActivaEstilo('color-1')"></span>
+    <span class="color-2" onclick="setActivaEstilo('color-2')"></span>
+    <span class="color-3" onclick="setActivaEstilo('color-3')"></span>
+    <span class="color-4" onclick="setActivaEstilo('color-4')"></span>
+    <span class="color-5" onclick="setActivaEstilo('color-5')"></span>
+    <span class="color-6" onclick="setActivaEstilo('color-6')"></span>
+    <span class="color-7" onclick="setActivaEstilo('color-7')"></span>
+    <span class="color-8" onclick="setActivaEstilo('color-8')"></span>
+    <span class="color-9" onclick="setActivaEstilo('color-9')"></span>
+    <span class="color-10" onclick="setActivaEstilo('color-10')"></span>
+</div>
+</div>
+
+<!--==================== JS (Adicional) ===================================-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js" integrity="sha512-GMGzUEevhWh8Tc/njS0bDpwgxdCJLQBWG3Z2Ct+JGOpVnEmjvNx6ts4v6A2XJf1HOrtOsfhv3hBKpK9kE5z8AQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!--===================== JS ==============================================-->
+
+<script src="./JS/Dashboad.js"></script>
+<script src="./JS/Selectro-Estilo.js"></script>
+
+<!--===================== JS (ICONOS) =====================================-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+</html>

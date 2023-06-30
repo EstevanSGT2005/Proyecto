@@ -1,0 +1,330 @@
+.padd-15
+{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.section
+{
+    background: var(--fd-color-100);
+    min-height: 100vh;
+    position: fixed;
+    display: block;
+    padding: 0 30px;
+    opacity: 1;
+    left: 270px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.section.back-section
+{
+    z-index: 1;
+}
+
+.section.active
+{
+    z-index: 2;
+    opacity: 1;
+
+}
+
+
+
+.contenedor
+{
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+}
+
+.section .contenedor
+{
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+.catalogo-titulo
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 60px;
+}
+
+.catalogo-titulo h2
+{
+    font-size: 40px;
+    color: var(--texto);
+    font-weight: 700;
+    position: relative;
+}
+
+.catalogo-titulo h2::before
+{
+    content: '';
+    height: 4px;
+    width: 50px;
+    background-color: var(--estilo-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.catalogo-titulo h2::after
+{
+    content: '';
+    height: 4px;
+    width: 25px;
+    background-color: var(--estilo-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+}
+
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;
+}
+
+.boton
+{
+    font-size: 18px;
+    font-weight: 700;
+    padding: 12px 35px;
+    color: #fff;
+    border-radius: 40px;
+    display: inline-block;
+    white-space: nowrap;
+    border: none;
+    background: var(--estilo-color);
+    transition: all 0.3s ease;
+}
+
+.boton:hover
+{
+    transform: scale(1.05);
+}
+
+.sombra
+{
+    box-shadow: 0 0 20px var(--estilo-color);
+}
+
+/*aside*/
+
+.aside
+{
+    width: 290px;
+    background: var(--fd-color-900);
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 30px;
+    height: 100%;
+    border-right: 2px solid var(--fd-color-50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.aside .logo
+{
+    position: absolute;
+    top: 10px;
+}
+
+.aside .logo img
+{
+    height: 150px;
+    width: 150px;
+}
+
+.aside .nav-toggler
+{
+    height: 40px;
+    width: 45px;
+    border: 4px solid var(--estilo-color);
+    cursor: pointer;
+    position: fixed;
+    left: 300px;
+    top: 20px;
+    border-radius: 5px;
+    background: var(--fd-color-900);
+    display: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.aside .nav-toggler span
+{
+    height: 3px;
+    width: 18px;
+    background: var(--estilo-color);
+    display: inline-block;
+    position: relative;
+
+}
+
+
+.aside .nav-toggler.open span
+{
+    background-color: transparent;
+}
+
+.aside .nav-toggler span::before
+{
+    content: '';
+    height: 3px;
+    width: 18px;
+    background: var(--estilo-color);
+    position: absolute;
+    top: -6px;
+    left: 0;
+}
+
+.aside .nav-toggler.open span::before
+{
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.aside .nav-toggler span::after
+{
+    content: '';
+    height: 3px;
+    width: 18px;
+    background: var(--estilo-color);
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+
+.aside .nav-toggler.open span::after
+{
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.aside .nav
+{
+    margin-top: 90px;
+}
+
+.aside .nav li
+{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.aside .nav li button
+{
+    font-size: 14px;
+    font-weight: 700;
+    border: transparent;
+    color: var(--texto);
+    background-color: transparent;
+    border-bottom: 1px solid  var(--fd-color-50);
+    width: 100%;
+    padding: 5px 15px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.aside .nav li a,
+.aside .nav li button
+{
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    border-bottom: 2px solid var(--fd-color-50);
+    color: var(--texto);
+    padding: 5px 15px;
+}
+
+.aside .nav li a.active,
+.aside .nav li button.active
+{
+    color: var(--estilo-color);
+}
+
+.aside .nav li a i, 
+.aside .nav li button i
+{
+    top: 0;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+@media (max-width:1199px)
+{
+    .section .contenedor
+    {
+        padding-top: 70px;
+    }
+
+    .aside
+    {
+        left: -290px;
+    }
+
+    .aside.open
+    {
+        left: 0;
+    }
+
+    .aside .nav-toggler
+    {
+        display: flex;
+        left: 30px;
+    }
+
+    .aside .nav-toggler.open
+    {
+        left: 300px;
+    }
+
+    .section
+    {
+        left: 0;
+    }
+
+    .section.open
+    {
+        left: 270px;
+    }
+
+}
+
+@media (max-width:991px)
+{
+
+    .contenedor .producto-item
+    {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+}
+
+@media (max-width:767px)
+{
+
+    .contenedor .producto-item
+    {
+        flex: 0 0 80%;
+        max-width: 70%;
+        margin-left: 80px;
+    }
+}

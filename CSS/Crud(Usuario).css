@@ -1,0 +1,281 @@
+body
+{
+    background: var(--fd-color-100);
+}
+
+/*Menu Principal*/
+
+nav
+{
+    width: 100%;
+    background: var(--fd-color-900);
+}
+
+nav .contenedor
+{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+nav img.logo
+{
+    width: 120px;
+    margin: 0 35px;
+}
+
+nav .contenedor .busqueda 
+{
+    align-items: center;
+    display: flex;
+    width: 400px;
+    left: 30%;
+    position: absolute;
+}
+
+nav .contenedor input[type='submit']
+{
+    padding: 0 15px;
+    background-color: #000 ;
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 10px;
+    border: 3px solid var(--estilo-color);
+    left: 62%;
+    position: absolute;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+nav .contenedor input[type='submit']:hover
+{
+    background-color: var(--estilo-color);
+    border-color: var(--texto);
+}
+
+nav .contenedor .busqueda input[type='search']
+{
+    background: #000;
+    border: 3px solid var(--estilo-color);
+    border-radius: 20px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    height: 100%;
+    padding: 6px 1.6rem;
+    width: 100%;
+    transition: all .5s ease;
+}
+
+nav .contenedor .busqueda input[type='search']:focus
+{
+    background-color: var(--estilo-color);
+    border-color: var(--texto);
+}
+
+nav .contenedor .busqueda input[type='search']::placeholder
+{
+    color: #fff;
+}
+
+nav .contenedor .toggle
+{
+
+    border:3px solid var(--estilo-color);
+    color: var(--texto);
+    background: var(--fd-color-900);
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    transition: all .3s ease;
+}
+
+nav .contenedor .toggle i
+{
+    color: var(--estilo-color);
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+nav .contenedor .toggle:hover
+{
+    background-color: var(--estilo-color);
+    border-color: var(--texto);
+}
+
+nav .contenedor .toggle:hover i
+{
+    color: #fff;
+}
+
+/*Menu Segundario*/
+
+main
+{
+    background: var(--fd-color-100);
+    display: grid;
+    grid-template-columns: 12rem auto 30rem;
+    gap: 2rem;
+    width: 100%;
+}
+
+main aside
+{
+    padding: 10px 0;
+    background: var(--fd-color-900);
+    border-right: 2px solid var(--fd-color-50);
+    border-bottom: 2px solid var(--fd-color-50);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+main .aside .nav a
+{
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    border-bottom: 2px solid var(--fd-color-50);
+    align-items: center;
+    gap: 1.2rem;
+    width: 190px;
+    height: 3.2rem;
+    color: var(--texto);
+    text-decoration: none;
+    position: relative;
+}
+
+main .aside .nav a i
+{
+    transition: all 300ms ease;
+}
+
+main .aside .nav a i.fa
+{
+    font-size: 18px;
+}
+
+main .aside .nav a i.fa-solid
+{
+    font-size: 21px;
+}
+
+main .aside .nav a i.icon,
+main .aside .nav a i.bx
+{
+    font-size: 26px;
+}
+
+main .aside .nav a.active
+{
+    color: var(--estilo-color);
+}
+
+main .aside .nav a:hover i
+{
+    margin-left: .70rem;
+}
+
+main aside
+{
+    display: none;
+}
+
+/*Titulo*/
+
+section .contenedor
+{
+    display: grid;
+    padding: 10px 20px;
+    background: var(--fd-color-100);
+    width: 100%;
+    height: 100%;
+}
+
+section .contenedor .contenedor-titulo h2.titul
+{
+    display: flex;
+    color: var(--texto);
+    font-family: 'Roboto Slab';
+
+}
+
+section .contenedor .rows  .izquierda
+{
+    display: flex;
+    justify-content: end;
+    padding: 10px 0;
+}
+
+section .contenedor .rows  .izquierda a
+{
+    background-color: #000;
+    border: 3px solid var(--estilo-color);
+    padding: 0 15px;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+
+section .contenedor .rows  .izquierda a:hover
+{
+   background-color: var(--estilo-color);
+   border-color: var(--texto) ; 
+}
+
+
+section .contenedor .row table
+{
+    background-color: var(--fd-color-900);
+    border: 4px solid var(--estilo-color);
+    width: 100%;
+}
+
+section .contenedor .row table thead tr th
+{
+    width: 100%;
+    background-color: var(--fd-color-900);
+    border-right: 2px solid var(--estilo-color);
+    border-bottom: 5px solid var(--estilo-color) ;
+    color: var(--texto);
+    padding: 0 10px;
+    text-align: center;
+}
+
+section .contenedor .row table tbody tr td
+{
+    width: 100%;
+    background-color: var(--fd-color-50);
+    border-right: 2px solid var(--estilo-color);
+    border-bottom: 5px solid var(--estilo-color) ;
+    color: var(--texto);
+    padding: 0 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+section .contenedor .row table tbody tr td a
+{
+    padding:0 20px;
+    text-decoration: none;
+    color: var(--texto);
+    transition: all .3s ease;
+}
+
+section .contenedor .row table tbody tr td:hover a
+{
+    color:var(--estilo-color);
+}
